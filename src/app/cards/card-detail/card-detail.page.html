@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Detalhes da Carta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="card">
+    <ion-item>
+      <ion-img src="{{card.imageUrl}}"></ion-img>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Nome: {{card.name}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Custo de Mana: {{card.manaCost}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">CMC: {{card.cmc}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Cores: {{card.colors}}</ion-label>
+    </ion-item>
+        <ion-item>
+      <ion-label class="ion-text-wrap">Tipo: {{card.type}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Tipos: {{card.types}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Subtipos: {{card.subtypes}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Raridade: {{card.rarity}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Edição (Set): {{card.set}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Texto: {{card.text}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-wrap">Artista: {{card.artist}}</ion-label>
+    </ion-item>
+<ion-button (click)="voltar()">VOLTAR A LISTAGEM</ion-button>
+  </ion-card>
+</ion-content>
